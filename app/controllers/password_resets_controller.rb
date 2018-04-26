@@ -1,4 +1,3 @@
-# Comment
 class PasswordResetsController < ApplicationController
   before_action :load_user, :valid_user, :check_expiration, only: %i(edit update)
   def create
@@ -49,7 +48,7 @@ class PasswordResetsController < ApplicationController
 
   def check_expiration
     return unless @user.password_reset_expired?
-    flash[:danger] = t ".controllers.password_reset_expired"
+    flash[:danger] = t ".controllers.time_expire"
   end
 
   def password_empty

@@ -32,6 +32,9 @@
 en:
   subtitle: "Ruby on Rails Tutorial Sample App"
   layouts:
+    application:
+      controllers:
+        log_in: "Please log in."
     header:
       sample_app: "Sample App"
       home: "Home"
@@ -94,6 +97,12 @@ en:
       sample_application: "sample application."
       sign_up: "Sign up now!"
       rubyonrails_link: "http://rubyonrails.org/"
+      user_info: "shared/user_info"
+      micropost_form: "shared/micropost_form"
+      feed: "shared/feed"
+      image: "rails.png"
+      logo: "Rails logo"
+      micropost_feed: "Micropost Feed"
   users:
     new:
       sign_up: "Sign up"
@@ -119,6 +128,7 @@ en:
     index:
       all_users: "All Users"
     show:
+      micropost: "Micropost"
       controllers:
         danger: "User doesn't exist"
     user:
@@ -128,6 +138,14 @@ en:
     error_messages:
       error: "error"
       contains_error: "The form contains"
+    user_info:
+      view_profile: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      render_error_message: "shared/error_messages"
+      description: "Compose new micropost..."
+      post: "Post"
+      acept_image: "image/jpeg,image/gif,image/png"
   sessions:
     new:
       remember_me: "Remember me on this computer"
@@ -178,6 +196,20 @@ en:
       controllers:
         password_can_not_empty: "can't be empty"
         password_has_been_reset: "Password has been reset."
+  microposts:
+    create:
+      controllers:
+        flash_success: "Micropost created!"
+        redirect_home: "static_pages/home"
+    destroy:
+      controllers:
+        flash_success: "Micropost deleted"
+        flash_danger: "Can't delete this micropost"
+    micropost:
+      delete: "delete"
+      confirm_delete: "You sure?"
+      posted: "Posted"
+      ago: "ago."
   activerecord:
     attributes:
       user:
@@ -185,3 +217,8 @@ en:
         email: Email
         password: Password
         password_confirmation: Password Confirmation
+  less_than_5mb: "should be less than 5MB"
+  maximum_file_size: "Maximum file size is 5MB. Please choose a smaller file."
+  micropost:
+    one: "%{count} Micropost"
+    other: "%{count} Microposts"

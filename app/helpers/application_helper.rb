@@ -1,4 +1,3 @@
-# Comment
 module ApplicationHelper
   def full_title page_title
     base_title = I18n.t("subtitle")

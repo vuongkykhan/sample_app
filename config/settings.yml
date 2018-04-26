@@ -7,3 +7,10 @@ user:
     min_length: 6
   time:
     expired: 2
+micropost:
+  content:
+    max_length: 140
+  picture:
+    size: 5
+gravatar:
+  size: 50

@@ -1,4 +1,3 @@
-# User Controller Comment
 class UsersController < ApplicationController
   before_action :find_user, except: %i(index new create)
   before_action :logged_in_user, except: %i(show new create)
@@ -11,6 +10,7 @@ class UsersController < ApplicationController
 
   def show
     redirect_to root_url && return unless @user.activated?
+    @microposts = @user.microposts.load_by_desc.paginate page: params[:page]
   end
 
   def new
@@ -49,13 +49,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit :name, :email, :password, :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t ".controllers.danger"
-    redirect_to login_url
   end
 
   def correct_user
