@@ -113,10 +113,11 @@ en:
         password_confirmation: Password Confirmation
   sessions:
     new:
+      remember_me: "Remember me on this computer"
       log_in: "Log in"
       new_user: "New user?"
       signup_now: "Sign up now!"
     create:
       controllers:
         flash_messages: "Invalid email/password combination"
-
+        remember_state: "1"
