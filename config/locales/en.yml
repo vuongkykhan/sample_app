@@ -31,6 +31,23 @@
 
 en:
   subtitle: "Ruby on Rails Tutorial Sample App"
+  home: "Home"
+  help: "Help"
+  about: "About"
+  contact: "Contact"
+  log_in: "Log in"
+  layouts:
+    header:
+      sample_app: "Sample App"
+    footer:
+      the: "The"
+      ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
+      by: "by"
+      michael_hartl: "Michael Hartl"
+      news: "News"
+      tutorial_link: "http://www.railstutorial.org/"
+      michaelhartl_link: "http://www.michaelhartl.com/"
+      new_link: "http://news.railstutorial.org/"
   static_pages:
     about:
       about: "About"
@@ -60,5 +77,9 @@ en:
       this_is: "This is the home page for the"
       ruby_on_rails: "Ruby on Rails Tutorial"
       sample_application: "sample application."
+  users:
+    new:
+      sign_up: "Sign up"
+      signup_page: "This will be a signup page for new users."
 
 
