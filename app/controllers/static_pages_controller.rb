@@ -1,11 +1,10 @@
+# Static Pages Controller Comment
 class StaticPagesController < ApplicationController
-  def home
-  end
+  def home; end
 
-  def help
-  end
+  def help; end
 
-  def about
+  def about; end
 
-  end
+  def contact; end
 end
