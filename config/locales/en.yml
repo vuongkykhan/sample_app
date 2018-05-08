@@ -81,5 +81,19 @@ en:
     new:
       sign_up: "Sign up"
       signup_page: "This will be a signup page for new users."
-
+      create_account: "Create my account"
+    create:
+      controllers:
+        welcome: "Welcome to the Sample App!"
+  shared:
+    error_messages:
+      error: "error"
+      contains_error: "The form contains"
+  activerecord:
+    attributes:
+      user:
+        name: Name
+        email: Email
+        password: Password
+        password_confirmation: Password Confirmation
 
