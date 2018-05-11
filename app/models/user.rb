@@ -4,7 +4,7 @@ class User < ApplicationRecord
   attr_accessor :remember_token
   validates :email, presence: true, length: {maximum: Settings.user.email.max_length},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
-  validates :password, presence: true, length: {minimum: Settings.user.password.min_length}
+  validates :password, presence: true, length: {minimum: Settings.user.password.min_length}, allow_nil: true
   validates :name, presence: true, length: {maximum: Settings.user.name.max_length}
   before_save{email.downcase!}
   has_secure_password
@@ -33,7 +33,6 @@ class User < ApplicationRecord
     BCrypt::Password.new(remember_digest).is_password?(remember_token)
   end
 
-  # Forgets a user.
   def forget
     update(remember_digest: nil)
   end

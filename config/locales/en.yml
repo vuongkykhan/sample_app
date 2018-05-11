@@ -55,6 +55,8 @@ en:
       tutorial_link: "http://www.railstutorial.org/"
       michaelhartl_link: "http://www.michaelhartl.com/"
       new_link: "http://news.railstutorial.org/"
+    form:
+      save: "Save Changes"
   static_pages:
     about:
       about: "About"
@@ -100,17 +102,31 @@ en:
     create:
       controllers:
         welcome: "Welcome to the Sample App!"
+    update:
+      controllers:
+        success: "Profile Updated"
+    destroy:
+      controllers:
+        success: "User Deleted"
+    edit:
+      edit: "Edit User"
+      update: "Update your profile"
+      gravatar_link: "http://gravatar.com/emails"
+      gravatar_change: "change"
+      controllers:
+        danger: "Please log in."
+    index:
+      all_users: "All Users"
+    show:
+      controllers:
+        danger: "User doesn't exist"
+    user:
+      delete: "delete"
+      confirm: "Are you sure?"
   shared:
     error_messages:
       error: "error"
       contains_error: "The form contains"
-  activerecord:
-    attributes:
-      user:
-        name: Name
-        email: Email
-        password: Password
-        password_confirmation: Password Confirmation
   sessions:
     new:
       remember_me: "Remember me on this computer"
@@ -121,3 +137,10 @@ en:
       controllers:
         flash_messages: "Invalid email/password combination"
         remember_state: "1"
+  activerecord:
+    attributes:
+      user:
+        name: Name
+        email: Email
+        password: Password
+        password_confirmation: Password Confirmation

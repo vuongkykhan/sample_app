@@ -22,6 +22,6 @@ class SessionsController < ApplicationController
     if params[:session].present?
       params[:session][:remember_me] == t(".controllers.remember_state") ? remember(user) : forget(user)
     end
-    redirect_to user
+    redirect_back_or user
   end
 end
