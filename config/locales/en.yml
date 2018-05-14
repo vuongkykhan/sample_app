@@ -134,6 +134,7 @@ en:
       log_in: "Log in"
       new_user: "New user?"
       signup_now: "Sign up now!"
+      forgot_password: "(forgot password)"
     create:
       controllers:
         flash_messages: "Invalid email/password combination"
@@ -146,10 +147,37 @@ en:
       hi: "Hi"
       welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
       active: "Active"
+    password_reset:
+      subject: "Password reset"
+      password_reset: "Password reset"
+      content_1: "To reset your password click the link below:"
+      submit: "Reset password"
+      time_expire: "This link will expire in two hours."
+      content_2: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
   account_activations:
     controllers:
       flash_success: "Account activated!"
       flash_danger: "Invalid activation link"
+  password_resets:
+    controllers:
+      password_reset_expired: "Password reset has expired."
+      user_not_found: "User could not be found."
+    new:
+      password_reset: "Password Reset"
+      submit: "Submit"
+    create:
+      controllers:
+        flash_info: "Email sent with password reset instructions"
+        flash_danger: "Email address not found"
+    edit:
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+      reset_password: "Reset password"
+      update_password: "Update password"
+    update:
+      controllers:
+        password_can_not_empty: "can't be empty"
+        password_has_been_reset: "Password has been reset."
   activerecord:
     attributes:
       user:
