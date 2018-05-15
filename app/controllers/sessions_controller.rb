@@ -1,4 +1,3 @@
-# Sessions Controller Comment
 class SessionsController < ApplicationController
   def new; end
 
