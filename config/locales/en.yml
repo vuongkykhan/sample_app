@@ -103,6 +103,7 @@ en:
       image: "rails.png"
       logo: "Rails logo"
       micropost_feed: "Micropost Feed"
+      follow_stats: "shared/stats"
   users:
     new:
       sign_up: "Sign up"
@@ -131,9 +132,30 @@ en:
       micropost: "Micropost"
       controllers:
         danger: "User doesn't exist"
+      follow_stats: "shared/stats"
+      follow_form: "follow_form"
     user:
       delete: "delete"
       confirm: "Are you sure?"
+    follow_form:
+      follow: "follow"
+      unfollow: "unfollow"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    followers:
+      controllers:
+        followers: "Followers"
+        show_follow: "show_follow"
+    following:
+      controllers:
+        following: "Following"
+        show_follow: "show_follow"
+    show_follow:
+      view_my_profile: "view my profile"
+      micropost: "Microposts"
+      follow_stats: "shared/stats"
   shared:
     error_messages:
       error: "error"
@@ -146,6 +168,9 @@ en:
       description: "Compose new micropost..."
       post: "Post"
       acept_image: "image/jpeg,image/gif,image/png"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     new:
       remember_me: "Remember me on this computer"
