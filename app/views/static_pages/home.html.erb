@@ -6,13 +6,16 @@
       <section class="user_info">
         <%= render t(".user_info") %>
       </section>
+      <section class="stats">
+        <%= render t(".follow_stats") %>
+      </section>
       <section class="micropost_form">
         <%= render t(".micropost_form") %>
       </section>
     </aside>
     <div class="col-md-8">
       <h3><%= t ".micropost_feed" %></h3>
-      <%= render t(".feed") %>
+      <%= render "shared/feed" %>
     </div>
   </div>
 <% else %>
